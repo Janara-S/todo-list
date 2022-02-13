@@ -1,0 +1,146 @@
+.body {
+    box-sizing: border-box;
+    background-color: #1093be;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.myForm {
+    border: 1px solid #888;
+    width: 650px;
+    margin: 0 auto;
+    height: 0 auto;
+    background-color: rgb(72, 160, 187);
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 25px;
+    text-align: center;
+
+}
+
+
+
+.todo-list {
+    width: 600px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    text-align: start;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 8px 4px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-left: 35px;
+
+}
+
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+    margin: 10px 0;
+    border-radius: 4px;
+
+}
+
+ul li:hover {
+    background: #ddd;
+}
+
+ul li.checked {
+    background: rgb(130, 155, 160);
+    color: #fff;
+    text-decoration: line-through;
+    border-radius: 4px;
+
+
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: rgb(168, 41, 32);
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+    font-size: 16px;
+
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 8px 8px;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.myForm,
+.todo-item {
+
+    padding: 30px 40px;
+    text-align: center;
+}
+
+
+
+.todo-item:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input {
+    margin-bottom: 1em;
+    margin-top: 10px;
+    border: 1px solid black;
+    padding: 10px 15px;
+    width: 70%;
+    border-radius: 4px;
+    margin-bottom: 1em;
+    display: inline;
+
+}
+
+.addBtn {
+    margin-bottom: 1em;
+    margin-top: 10px;
+    border: none;
+    padding: 10px 165px;
+    border-radius: 4px;
+    margin-bottom: 1em;
+    display: inline;
+    background: #d9d9d9;
+    color: #555;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.addBtn:hover {
+    background-color: #bbb;
+}
